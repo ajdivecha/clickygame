@@ -1,0 +1,17 @@
+.jumbotron {
+  max-width: 825px;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.score{
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
