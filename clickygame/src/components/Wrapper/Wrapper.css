@@ -5,12 +5,15 @@
   width: 70%;
   max-width: 825px;
   margin: 0 auto;
+  margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
   padding: 20px;
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
-  /* background-color: black;
-  background-size: 100%; */
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: 100%;
+
+
 }

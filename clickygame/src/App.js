@@ -50,18 +50,18 @@ handleDecrement = () => {
 
   };
 
-  cardPicked = id => {
-
-    const pickedCard = this.state.characters.filter(card => card.id === id);
-      if (pickedCard[0].picked === true) {
-        
-      else {
-        this.handleIncrement();
-        shuffle(this.state.characters);
-        pickedCard[0].picked = true;
-        this.setState({shuffle: true});
-      }
-  }
+  // cardPicked = id => {
+  //
+  //   const pickedCard = this.state.characters.filter(card => card.id === id);
+  //     if (pickedCard[0].picked === true) {
+  //
+  //     else {
+  //       this.handleIncrement();
+  //       shuffle(this.state.characters);
+  //       pickedCard[0].picked = true;
+  //       this.setState({shuffle: true});
+  //     }
+  // }
 
   render() {
     return (
