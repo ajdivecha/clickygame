@@ -1,15 +1,17 @@
 import React from "react";
 import "./Jumbotron.css";
 import Score from "./Score.js";
+import HighScore from "./HighScore.js";
 
 const Jumbotron = props => (
 <div className="jumbotron">
   <div className="container">
-    <h2 className="title">The Women of Disney: Day of the Dead Edition</h2>
-    <h4 className="rules">Want to play a game? Like chasing high scores?</h4>
-    <h4 className="rules">Play below and try not to click the the same sugar skull twice.</h4>
-    <Score
-    score={props.score}/>
+    <h1 className="title">The Women of Disney: Day of the Dead Edition</h1>
+    <h3 className="rules">Click below and try not to choose the same lady twice.</h3>
+
+    <h2>Score <Score className='score' score={props.score}/></h2>
+    <h2>High Score <HighScore className='highScore' highScore={props.highScore}/></h2>
+
   </div>
 </div>
 )
