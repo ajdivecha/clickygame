@@ -32,7 +32,8 @@ class App extends Component {
     characters: characters,
     shuffle: false,
     count: 0,
-    highScore: 0
+    highScore: 0,
+    message: ""
   };
 
   handleIncrement = () => {
@@ -53,7 +54,8 @@ class App extends Component {
     const pickedCard = this.state.characters.filter(card => card.id === id);
       if (pickedCard[0].picked === true) {
 
-        // alert ("Oh no! Let's play again.");
+        this.setState({message: "Oh no, you lose. Let's play again! Click a card to restart the game."});
+
         this.restartGame();
 
         if (this.state.count > this.state.highScore) {
@@ -62,8 +64,11 @@ class App extends Component {
 
         if (this.state.score > 11) {
           this.setState({highScore: this.state.score});
-          // alert("Winner! Let's play again");
+
+          this.setState({message: "Winner! Want to play again? Click a card to restart the game."});
+
           this.restartGame();
+
         }
 
       }
@@ -73,6 +78,7 @@ class App extends Component {
         shuffle(this.state.characters);
         pickedCard[0].picked = true;
         this.setState({shuffle: true});
+        this.setState({message: ""});
       }
   }
 
@@ -81,7 +87,8 @@ class App extends Component {
       <div>
         <Jumbotron
         score={this.state.count}
-        highScore={this.state.highScore}/>
+        highScore={this.state.highScore}
+        message ={this.state.message}/>
 
         <Wrapper>
           {this.state.characters.map(character => (

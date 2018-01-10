@@ -1,7 +1,7 @@
 import React from "react";
 
 const HighScore = props => (
-<p className="HighScore">{props.highScore}</p>
+<span className="scores">{props.highScore}</span>
 );
 
 export default HighScore;

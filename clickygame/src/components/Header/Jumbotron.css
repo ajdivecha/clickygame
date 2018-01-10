@@ -1,27 +1,45 @@
 .jumbotron {
   width: 100%;
-  max-height: 285px;
+  max-height: 350px;
   margin-bottom: 10px;
   background-image: url("https://media.giphy.com/media/Os30SuayYY9Ec/giphy.gif");
   background-size: 100%;
-}
 
-.score{
-  text-align: center;
 }
 
 .title {
   text-align: center;
-  font-family: VT323;
+  font-family: Sedgwick ave display;
+  color: #c62b29;
+  margin-top: 5px;
 }
 
 .score {
   text-align: center;
   font-family: VT323;
-  font-size: 20px;
+  color: grey;
+  font-size: 30px;
 }
 
 h3 {
+  text-align: center;
+  font-family: Sedgwick ave display;
+  color: white;
+}
+
+.scores {
+  color: yellow;
+  text-align: center;
+  font-family: VT323;
+  font-size: 25px;
+}
+
+.scoreBoard {
+  text-align: center;
+}
+
+.alert {
+  color: white;
   text-align: center;
   font-family: VT323;
 }
